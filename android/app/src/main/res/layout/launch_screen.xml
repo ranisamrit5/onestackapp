@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash"
+    android:gravity="center">
+    <ImageView
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/splash"
+        />
+<!--    <ImageView-->
+<!--        android:id="@+id/logo"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_width="111dp"-->
+<!--        android:layout_height="46dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:src="@drawable/logosplash"-->
+<!--        />-->
+<!--    <ImageView-->
+<!--        android:layout_below="@id/logo"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_width="166dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:src="@drawable/logoname"-->
+<!--        />-->
+</RelativeLayout>
