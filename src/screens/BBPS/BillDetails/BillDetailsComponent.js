@@ -36,7 +36,7 @@ const BillDetailsComponent = memo((props) => {
                         </View>
                     </View>
                     <TouchableOpacity style={styles.button}
-                    //   onPress={() => props.VerifyButtonPress()}
+                      onPress={() => props.go()}
                     >
                         <Text style={styles.buttonText}>Get Bill Details</Text>
                     </TouchableOpacity>

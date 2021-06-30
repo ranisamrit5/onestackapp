@@ -14,6 +14,8 @@ export default {
   mylocation: require('../../assets/images/my-location.png'),
   down: require('../../assets/images/chevron-down.png'),
   power: require('../../assets/images/power.png'),
-  bharat: require('../../assets/images/bharat.png')
-
+  bharat: require('../../assets/images/bharat.png'),
+  checkedradiobutton: require('../../assets/images/checked-radiobutton.png'),
+  uncheckedradiobutton: require('../../assets/images/unchecked-radiobutton.png'),
+  upi: require('../../assets/images/upi.png')
 };

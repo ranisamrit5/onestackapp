@@ -16,6 +16,8 @@ import PaymentOptionsContainer from '../screens/InvestmentJourney/PaymentOptions
 import BillPaymentContainer from '../screens/BBPS/BillPayment/BillPaymentContainer';
 import RecentBillContainor from '../screens/BBPS/RecentBill/RecentBillContainor';
 import BillDetailsContainor from '../screens/BBPS/BillDetails/BillDetailsContainor';
+import PaymentBBPSOptionContainor from '../screens/BBPS/PaymentOption/PaymentBBPSOptionContainor';
+import CVVContainor from '../screens/BBPS/CVV/CVVContainor';
 
 const SplashStack = createStackNavigator();
 
@@ -37,6 +39,8 @@ const DashBoardScreen = () => (
     <DashBoardStack.Screen name="BillPaymentContainer" component={BillPaymentContainer} />
     <DashBoardStack.Screen name="RecentBillContainor" component={RecentBillContainor} />
     <DashBoardStack.Screen name="BillDetailsContainor" component={BillDetailsContainor} />
+    <DashBoardStack.Screen name="PaymentBBPSOptionContainor" component={PaymentBBPSOptionContainor} />
+    <DashBoardStack.Screen name="CVVContainor" component={CVVContainor} />
   </DashBoardStack.Navigator>
 );
 

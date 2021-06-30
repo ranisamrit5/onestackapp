@@ -73,5 +73,6 @@ export default StyleSheet.create({
     color:colors.blue,
     fontSize: sizes.small,
     fontFamily: fonts.Medium
-  }
+  },
+  
 });
