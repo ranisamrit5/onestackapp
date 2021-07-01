@@ -22,7 +22,6 @@ export default StyleSheet.create({
     },
     rowradioButton:{
       flexDirection:"row",
-      justifyContent:"space-between",
       marginLeft: 5,
       marginRight: 16,
       marginTop: 16,
@@ -115,7 +114,7 @@ export default StyleSheet.create({
     fontFamily: fonts.SemiBold,
   },
   borderbox: {
-
+     
     marginLeft: 10,
     marginRight: 16,
     marginTop: 16,
@@ -172,8 +171,8 @@ export default StyleSheet.create({
     fontFamily: fonts.Medium
   },
   columbox:{
- marginLeft: 10,
- marginRight: 10,
+   marginLeft: 10,
+   marginRight: 10,
 
   },
   checkImage: {
@@ -187,7 +186,8 @@ export default StyleSheet.create({
     height:20,
     width:20,
     marginLeft: 16,
-    marginRight:16
+    marginRight:16,
+    alignSelf:"flex-end"
   },
   buttonKey: {
     flexDirection: "row",

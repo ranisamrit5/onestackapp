@@ -42,7 +42,22 @@ function BackButton(props) {
         </View>
     );
 }
-
+function CrossButton(props) {
+    const { navigation } = props;
+    return (
+        <View style={NavgationStyles.rightView}>
+            {
+                props.showback ?
+                    <TouchableWithoutFeedback onPress={() => navigation.crossButtonPress()}>
+                        <Image
+                            source={Images.close}
+                            style={NavgationStyles.crossButton} />
+                    </TouchableWithoutFeedback> : null
+            }
+            <Text style={NavgationStyles.titleText}>{props.title}</Text>
+        </View>
+    );
+}
 function SearchButton(props) {
     const { navigation } = props;
     return (
@@ -51,7 +66,7 @@ function SearchButton(props) {
                 props.showsearch ?
                     <TouchableWithoutFeedback onPress={() => navigation.searchButtonPress()}>
                         <Image
-                            source={Images.search}
+                            source={Images.bharat}
                             style={NavgationStyles.backButton} />
                     </TouchableWithoutFeedback> : null
             } */}
@@ -66,7 +81,8 @@ const setNavigation1 = (navigation, progress, showskip, showback) => {
         headerTitle: props => <ProgressBar navigation={navigation} progress={progress} />,
         headerRight: props => <SkipButton navigation={navigation} showskip={showskip} ></SkipButton>,
         headerLeft: props => <BackButton navigation={navigation} showback={showback} ></BackButton>,
-        headerStyle: {
+        headerLeft: props => <CrossButton navigation={navigation} showback={showback} ></CrossButton>,
+         headerStyle: {
             backgroundColor: colors.white,
             borderBottomWidth: 0,
             shadowOffset: { height: 0, width: 0 },

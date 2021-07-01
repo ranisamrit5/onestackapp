@@ -20,9 +20,7 @@ const BillPaymentContainer = (props) => {
         navigation.backButtonPress = () => {
             navigation.goBack()
         };
-        navigation.searchButtonPress = () => {
-            navigation.goBack()
-        };
+     
     });
     const go = () => {
         navigation.navigate('RecentBillContainor')

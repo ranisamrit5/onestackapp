@@ -41,7 +41,8 @@ export default StyleSheet.create({
   textInputViewRow: {
     flexDirection: 'row',
     alignItems:'center',
-    height:50  
+    height:50 ,
+     
   },
   textInput: {
     fontSize: sizes.mediumLarge,
@@ -50,7 +51,8 @@ export default StyleSheet.create({
     flex:1,
     height:50,
     borderWidth:0.5,
-    borderRadius:10   
+    borderRadius:10,
+   
   },
   button: {
     marginBottom: 16,
@@ -62,8 +64,7 @@ export default StyleSheet.create({
     justifyContent: "center",
     alignItems: 'center',
     backgroundColor: colors.blue,
-    marginBottom: 145
-  },
+    },
   buttonText: {
     color: colors.white,
     fontSize: sizes.small,

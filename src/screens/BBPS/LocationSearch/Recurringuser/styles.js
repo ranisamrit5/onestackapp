@@ -1,7 +1,6 @@
 import { StyleSheet } from 'react-native';
-import { colors, sizes, fonts } from '../../../utils/theme';
-import { Dimensions } from 'react-native'
-let deviceWidth = Dimensions.get('window').width
+import { colors, sizes, fonts } from '../../../../utils/theme';
+
 export default StyleSheet.create({
   container: {
     flex: 1,
@@ -13,27 +12,49 @@ export default StyleSheet.create({
     backgroundColor: colors.white
   },
   rowbox: {
-    flexDirection:"row",
-    justifyContent:"space-between",
+    flexDirection: "row",
     marginLeft: 16,
     marginRight: 16,
     marginTop: 16,
     paddingTop: 16,
-    },
-    rowradioButton:{
-      flexDirection:"row",
-      marginLeft: 5,
-      marginRight: 16,
-      marginTop: 16,
-      paddingTop: 16,
-     
-    },
-    rowView: {
+  },
+  locationImg: {
+    height: 30,
+    width: 30,
+    tintColor: colors.blue,
+    resizeMode: "contain",
+    alignSelf: "center"
+  },
+  textStyle: {
+    marginLeft: 16,
+    marginRight: 16,
+    fontSize: sizes.small,
+    color: colors.mediumGray,
+    fontFamily: fonts.Regular,
+    alignSelf: "center"
+  },
+  downImg: {
+    height: 20,
+    width: 20,
+    tintColor: colors.black,
+    resizeMode: "contain",
+    alignSelf: "center",
+
+  },
+  rowView: {
     flexDirection: 'row',
     marginLeft: 16,
     marginRight: 16,
     marginTop: 8,
     marginBottom: 8,
+  },
+  textStyleSemiBold: {
+    fontSize: sizes.extraLarge32,
+    color: colors.blackColor,
+    fontFamily: fonts.SemiBold,
+    height: 40,
+    marginTop: -7,
+    marginLeft: 5
   },
   textStyleRegular: {
     fontSize: sizes.extraLarge,
@@ -76,38 +97,36 @@ export default StyleSheet.create({
   headerRow: {
     marginLeft: 16,
     marginRight: 16,
-   },
+  },
   titletextStyleSemiBold: {
-    fontSize: sizes.medium,
+    fontSize: sizes.mediumLarge,
     color: colors.blackColor,
     fontFamily: fonts.SemiBold,
-  },
-  rowtitletextMediumLargeStyle:{
-  fontSize:sizes.mediumLarge,
-  color:colors.blackColor,
-  fontFamily: fonts.SemiBold,
-  },
-  titletextStyleSmall:{
-    fontSize:sizes.small,
-    color:colors.mediumGray,
-    lineHeight:20,
-    fontFamily:fonts.SemiBold,
-    
-  },
-  titletextStylesmall:{
-    fontSize:sizes.small,
-    color:colors.blue,
-    lineHeight:20,
-    fontFamily:fonts.SemiBold
   },
   viewAlltextStyleSemiBold: {
     fontSize: sizes.small,
     color: colors.primaryColor,
     fontFamily: fonts.SemiBold,
   },
+  rowlistbox: {
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-around",
+    marginLeft: 16,
+    marginRight: 16,
+    marginTop: 16,
+    marginBottom: 16,
+  },
+  rowlisttext: {
+    flexDirection: 'column',
+    marginLeft: 16,
+    marginRight: 16,
+    marginTop: 8,
+    marginBottom: 8,
+  },
   borderbox: {
 
-    marginLeft: 10,
+    marginLeft: 16,
     marginRight: 16,
     marginTop: 16,
     marginBottom: 16,
@@ -115,16 +134,34 @@ export default StyleSheet.create({
   },
   rowImageStyle: {
     width: 40,
-    height:40,
-    backgroundColor:colors.fair
+    height: 40,
+    // borderRadius: 10,
+    backgroundColor: colors.fair,
+    alignSelf: "center"
   },
   rowtitletextStyle: {
     marginLeft: 16,
-    marginRight: 16,
+    marginRight: 40,
     fontSize: sizes.medium,
-    color: colors.black,
-    fontFamily: fonts.medium,
-    lineHeight:22
+    color: colors.blackColor,
+    fontFamily: fonts.Regular
+  },
+  rowtitletextStyleA: {
+    marginTop: 10,
+    fontSize: sizes.small,
+    color: colors.blackColor,
+    fontFamily: fonts.Medium,
+    textAlign: "center",
+    alignSelf: "center",
+    lineHeight: 22
+  },
+  rowtitletextStyleB: {
+    fontSize: sizes.extarsmall,
+    color: colors.blackColor,
+    fontFamily: fonts.Medium,
+    textAlign: "center",
+    alignSelf: "center",
+    lineHeight: 16
   },
   rowseperatorView: {
     marginBottom: 16,
@@ -155,81 +192,11 @@ export default StyleSheet.create({
     color: colors.blackColor,
     fontFamily: fonts.Medium
   },
-  rowtitletextMediumStyleBlack: {
+  rowtitletextMediumStyleGreen: {
+    marginLeft: 16,
     marginRight: 40,
     fontSize: sizes.medium,
-    color: colors.black,
+    color: colors.greenColor,
     fontFamily: fonts.Medium
   },
-  columbox:{
- marginLeft: 10,
- marginRight: 10,
-
-  },
-  checkImage: {
-    height: 30,
-    width: 30,
-    marginLeft: 16,
-    alignSelf:"center",
-    resizeMode: 'contain'
-  },
-  Image:{
-    height:20,
-    width:20,
-    marginLeft: 16,
-    marginRight:16,
-     alignSelf:"flex-end"
-  },
-  buttonKey: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    padding: 16,
-    backgroundColor: colors.fair,
-    elevation: 3,
-
-  },
-  Smallbutton: {
-    width: '40%',
-    borderWidth: 0.5,
-    height: 45,
-    borderRadius: 30,
-    alignSelf: 'center',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderColor: colors.gray,
-  },
-  Continewbutton: {
-    width: '55%',
-    height: 45,
-    borderRadius: 30,
-    alignSelf: 'center',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.blue,
-  },
-  buttontext: {
-    color: colors.white,
-    fontSize: sizes.small,
-   fontFamily:fonts.Medium
-  },
-  main1: {
-    flexDirection: "row",
-    maxWidth: deviceWidth - 50
-  },
-  mainView: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "95%",
-    alignSelf: "center",
-    marginLeft: 10
-
-  },
-  smallrowtitletextStyle:{
-    fontSize:sizes.small,
-    color:colors.mediumGray,
-    marginLeft: 16,
-    marginRight: 16,
-    fontFamily:fonts.Regular,
-    lineHeight:20
-  }
 });

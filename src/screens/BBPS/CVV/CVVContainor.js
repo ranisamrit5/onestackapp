@@ -25,7 +25,7 @@ const CVVContainor = (props) => {
         };
     });
     const go = () => {
-        navigation.navigate('RecentBillContainor')
+        navigation.navigate('PaymentsuccessfullContainor')
       };
  const [isAccpet, setAccept] = React.useState(false);
   const isAccpetData = () => {

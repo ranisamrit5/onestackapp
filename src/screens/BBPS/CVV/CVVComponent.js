@@ -80,7 +80,7 @@ const CVVComponent = memo((props) => {
                         >
                             <TextInput
                                 value={props.mobile}
-                                maxLength={10}
+                                maxLength={3}
                                 autoFocus={true}
                                 placeholder={"CVV"}
                                 // onChangeText={(text) => {

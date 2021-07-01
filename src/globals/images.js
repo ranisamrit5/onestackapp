@@ -17,5 +17,10 @@ export default {
   bharat: require('../../assets/images/bharat.png'),
   checkedradiobutton: require('../../assets/images/checked-radiobutton.png'),
   uncheckedradiobutton: require('../../assets/images/unchecked-radiobutton.png'),
-  upi: require('../../assets/images/upi.png')
+  upi: require('../../assets/images/upi.png'),
+  close: require('../../assets/images/close.png'),
+  success: require('../../assets/images/success.png'),
+  currentlocation: require('../../assets/images/current-location.png'),
+  location: require('../../assets/images/locationnoresult.png'),
+  
 };

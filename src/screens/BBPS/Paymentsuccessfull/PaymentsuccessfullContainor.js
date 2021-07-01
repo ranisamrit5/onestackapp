@@ -2,9 +2,9 @@
 
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import PaymentBBPSOptionComponent from './PaymentBBPSOptionComponent';
+import PaymentsuccessfullComponent from './PaymentsuccessfullComponent';
 import { Navigation, Images } from '../../../utils/theme';
-const PaymentBBPSOptionContainor = (props) => {
+const PaymentsuccessfullContainor = (props) => {
     const { navigation } = props;
     const [isLoading, setLoading] = React.useState(false);
     const [seletedTab, setSeletedTab] = React.useState(0);
@@ -16,7 +16,7 @@ const PaymentBBPSOptionContainor = (props) => {
     }, []);
 
     React.useLayoutEffect(() => {
-        Navigation.setNavigation2(navigation, true, true, "Payment Options")
+        Navigation.setNavigation2(navigation, true, true, )
         navigation.backButtonPress = () => {
             navigation.goBack()
         };
@@ -25,16 +25,15 @@ const PaymentBBPSOptionContainor = (props) => {
         };
     });
     const go = () => {
-        navigation.navigate('CVVContainor')
+        navigation.navigate('RecurringuserContainor')
       };
-      
  const [isAccpet, setAccept] = React.useState(false);
   const isAccpetData = () => {
     setAccept(!isAccpet)
   }
 
     return (
-        <PaymentBBPSOptionComponent
+        <PaymentsuccessfullComponent
             props={props}
             isLoading={isLoading}
             seletedTab={seletedTab}
@@ -53,5 +52,5 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
 
 });
-export default connect(mapStateToProps, mapDispatchToProps)(PaymentBBPSOptionContainor);
+export default connect(mapStateToProps, mapDispatchToProps)(PaymentsuccessfullContainor);
 

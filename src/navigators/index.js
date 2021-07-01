@@ -18,6 +18,11 @@ import RecentBillContainor from '../screens/BBPS/RecentBill/RecentBillContainor'
 import BillDetailsContainor from '../screens/BBPS/BillDetails/BillDetailsContainor';
 import PaymentBBPSOptionContainor from '../screens/BBPS/PaymentOption/PaymentBBPSOptionContainor';
 import CVVContainor from '../screens/BBPS/CVV/CVVContainor';
+import PaymentsuccessfullContainor from '../screens/BBPS/Paymentsuccessfull/PaymentsuccessfullContainor';
+import RecurringuserContainor from '../screens/BBPS/LocationSearch/Recurringuser/RecurringuserContainor';
+import Search1Containor from '../screens/BBPS/LocationSearch/Search1/Search1Containor';
+import SearchContainor from '../screens/BBPS/LocationSearch/Search2/SearchContainor';
+
 
 const SplashStack = createStackNavigator();
 
@@ -41,6 +46,10 @@ const DashBoardScreen = () => (
     <DashBoardStack.Screen name="BillDetailsContainor" component={BillDetailsContainor} />
     <DashBoardStack.Screen name="PaymentBBPSOptionContainor" component={PaymentBBPSOptionContainor} />
     <DashBoardStack.Screen name="CVVContainor" component={CVVContainor} />
+    <DashBoardStack.Screen name="PaymentsuccessfullContainor" component={PaymentsuccessfullContainor} />
+    <DashBoardStack.Screen name="RecurringuserContainor" component={RecurringuserContainor} />
+    <DashBoardStack.Screen name="Search1Containor" component={Search1Containor} />
+    <DashBoardStack.Screen name="SearchContainor" component={SearchContainor} />
   </DashBoardStack.Navigator>
 );
 
